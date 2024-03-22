@@ -6908,8 +6908,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00149405, y: 0.26520824}
-  m_Size: {x: 1.5245447, y: 3.411951}
+  m_Offset: {x: 0.19285434, y: 0.26520824}
+  m_Size: {x: 1.9132415, y: 3.411951}
   m_Direction: 0
 --- !u!1 &981360722
 GameObject:
@@ -14232,6 +14232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 589684597}
   MaxHealth: 3000
+  CurrentHp: 0
 --- !u!114 &1823390663
 MonoBehaviour:
   m_ObjectHideFlags: 0
