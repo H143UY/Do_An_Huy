@@ -5266,7 +5266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1713393324}
-  MaxHealth: 3000
+  MaxHealth: 500
   CurrentHp: 0
 --- !u!114 &2003475503
 MonoBehaviour:

@@ -558,7 +558,7 @@ MonoBehaviour:
   damage: 100
   anim: {fileID: 204601549}
   isGround: 1
-  JumpForce: 5
+  JumpForce: 4
   GroundCheck: 2.3
   attackpoin: {fileID: 475118427}
   attackrange: 1.24
