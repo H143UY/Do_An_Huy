@@ -1,33 +1,52 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using static UnityEditorInternal.ReorderableList;
 
 public class HpPlayerController : SetHpManaController
 {
     public float MaxHealth;
     public float CurrentHp;
+    private float SaveCrutentHP = 500;
     private float TimeFireCoolDown;
     private void Awake()
-    {
+    {     
+        this.RegisterListener(EventID.ThoatGame, (sender, param) =>
+        {
+            Debug.Log("xoa key");
+            PlayerPrefs.DeleteKey("hp");
+        });
         this.RegisterListener(EventID.HoiManaVaMau, (sender, param) =>
         {
             HutMau();
         });
         this.RegisterListener(EventID.Heart, (sender, param) =>
         {
+            Debug.Log("Tangmau");
             CurrentHp += 200;
         });
         this.RegisterListener(EventID.QuaMan, (sender, param) =>
         {
-            DataAccountPlayer.PlayerData.SaveHp(CurrentHp);
+            SaveCrutentHP = CurrentHp;
+            PlayerPrefs.SetFloat("hp", SaveCrutentHP);
         });
     }
     private void Start()
     {
-        CurrentHp = DataAccountPlayer.PlayerData.hp;
+
+        if (PlayerPrefs.HasKey("hp"))
+        {
+            SaveCrutentHP = PlayerPrefs.GetFloat("hp");
+            CurrentHp = SaveCrutentHP;
+        }
+        else
+        {
+            CurrentHp = MaxHealth;
+        }
+
         SetMaxIndex(MaxHealth);
         SetIndex(CurrentHp);
     }
@@ -84,7 +103,7 @@ public class HpPlayerController : SetHpManaController
         {
             TakeDamage(60);
         }
-        if(collision.gameObject.tag == "bos")
+        if (collision.gameObject.tag == "bos")
         {
             TakeDamage(50);
         }

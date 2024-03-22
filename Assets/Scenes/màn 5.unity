@@ -3101,7 +3101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpSpeed: 6
-  UpForce: 10
+  UpForce: 2
 --- !u!50 &1410233256
 Rigidbody2D:
   serializedVersion: 4
@@ -3178,6 +3178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 861882337}
   MaxHealth: 500
+  CurrentHp: 0
 --- !u!114 &1410233259
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,4 +37,8 @@ public class GameManager : MonoBehaviour
             this.PostEvent(EventID.QuaMan);
         }
     }
+    private void OnApplicationQuit()
+    {
+        this.PostEvent(EventID.ThoatGame);
+    }
 }

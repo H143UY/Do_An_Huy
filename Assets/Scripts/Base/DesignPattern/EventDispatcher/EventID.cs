@@ -39,5 +39,6 @@ public enum EventID
     SwichCamera2,
     //enemy 
     NoFindPlayer,
-
+    //thoat
+    ThoatGame,
 }

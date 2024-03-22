@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpSpeed: 6
-  UpForce: 10
+  UpForce: 2
 --- !u!50 &204601552
 Rigidbody2D:
   serializedVersion: 4

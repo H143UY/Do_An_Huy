@@ -14384,8 +14384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b2cd19f91cb65048bc919fb065f0053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpSpeed: 7
-  UpForce: 7
+  UpSpeed: 6
+  UpForce: 2
 --- !u!1 &1841197362
 GameObject:
   m_ObjectHideFlags: 0
