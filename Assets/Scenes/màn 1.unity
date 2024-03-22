@@ -574,63 +574,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5812987646744605142, guid: 77a90ec636f4ef34b8069a9f52894d1c, type: 3}
   m_PrefabInstance: {fileID: 403377580}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &552255428
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 485.94165
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.52301717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183368395699716040, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991195002588977990, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
-      propertyPath: m_Name
-      value: khoa qua man (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f92c0705dd47b0f4ebc7f84504ac97a5, type: 3}
 --- !u!1001 &578385716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,7 +2362,6 @@ MonoBehaviour:
   slider: {fileID: 841018056}
   MaxHealth: 500
   CurrentHp: 0
-  SaveCrutentHP: 500
 --- !u!114 &1345444343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2550,7 +2492,7 @@ Transform:
   m_GameObject: {fileID: 1345444338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 477, y: 2, z: 0}
+  m_LocalPosition: {x: -7.1, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4103,4 +4045,3 @@ SceneRoots:
   - {fileID: 1123628164}
   - {fileID: 1988277882}
   - {fileID: 4868333276729425656}
-  - {fileID: 552255428}
