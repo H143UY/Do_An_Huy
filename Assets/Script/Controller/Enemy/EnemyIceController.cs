@@ -26,7 +26,6 @@ public class EnemyIceController : ObjecController
     public void SetAnim()
     {
         anim.SetBool("ChuyenTrangThai", ChuyenTrangThai);
-        anim.SetBool("RoiBang", RoiBang);
     }
 
     public void CreateIce()

@@ -11,8 +11,6 @@ public class ThornyBallController : MoveController
     {
         Animator = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move(transform.up);
@@ -23,7 +21,7 @@ public class ThornyBallController : MoveController
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag != this.gameObject.tag)
+        if (collision.gameObject.tag =="Player"|| collision.gameObject.tag == "Boss"|| collision.gameObject.tag == "san")
         {
             Vo_Vun = true;
         }

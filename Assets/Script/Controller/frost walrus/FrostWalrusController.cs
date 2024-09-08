@@ -1,7 +1,6 @@
 ﻿using Core.Pool;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class FrostWalrusController : ObjecController
@@ -31,7 +30,6 @@ public class FrostWalrusController : ObjecController
     public float TimeToRun;
     public bool CanRun = false;
     public bool CompleteToRun;
-    public GameObject RunningState;
     // ice ball
     [Header("Effect")]
     public GameObject Smoker;
@@ -127,7 +125,6 @@ public class FrostWalrusController : ObjecController
         {
             if (Run == true)
             {
-                RunningState.SetActive(false);
                 CompleteToRun = true;
                 CanRun = false;
             }
@@ -137,7 +134,6 @@ public class FrostWalrusController : ObjecController
         {
             if (Run == true)
             {
-                RunningState.SetActive(false);
                 CompleteToRun = true;
                 CanRun = false;
             }
@@ -275,7 +271,6 @@ public class FrostWalrusController : ObjecController
             {
                 if (scream == false && punch == false)
                 {
-                    RunningState.SetActive(true);
                     Run = true;
                 }
             }

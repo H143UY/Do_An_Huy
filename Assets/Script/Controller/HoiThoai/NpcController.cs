@@ -44,10 +44,6 @@ public class NpcController : MonoBehaviour
         }
     }
    
-    private void GiveKey()
-    {
-        SmartPool.Instance.Spawn(Key, DiaChi.transform.position, DiaChi.transform.rotation);
-    }
     private void nhay()
     {
         Jump = true;

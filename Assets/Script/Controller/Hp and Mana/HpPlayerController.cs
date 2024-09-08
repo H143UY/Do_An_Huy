@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
-using static UnityEditorInternal.ReorderableList;
-
 public class HpPlayerController : SetHpManaController
 {
     public float MaxHealth;
